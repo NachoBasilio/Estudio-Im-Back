@@ -7,7 +7,19 @@
     <title>Primer taller del curso practico</title>
 </head>
 <body>
-    <h1>Figuras geometricas</h1>
+    <header>
+        <h1>Figuras geometricas</h1>
+    </header>
+   
+    <section>
+        <h2>Calcula el area y perimetrode un cuadrado</h2>
+        <form action="">
+            <label for="inputCuadrado">Escribe cuanto mide un lado de tu cuadrado: </label>
+            <input id="inputCuadrado" type="number"/>
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>    
+        </form>
+    </section>
     <script src="./figuras_Geometricas.js"></script>
 </body>
 </html>

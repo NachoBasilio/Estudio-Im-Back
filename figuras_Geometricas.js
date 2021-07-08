@@ -1,24 +1,25 @@
 //Cuadrados
 const getPrimetroCuadrado = (lado) =>{
-    console.log("El perimetro de el cuadrado de lados iguales a " + lado + " es de " + lado*4 + " centimetros")
+    return lado*4
 }
 const getAreaCuadrado = (lado) =>{
-    console.log("El area del cuadrado formado por lados iguales a " + lado + " es igual a " + lado*lado + " centimetros cuadrados")
+    return lado*lado
 }
 //Triangulos
 const getPerimetroDeUnTriangulo = (lado1,lado2,lado3)=>{
-    console.log("El perimetro del triangulo formado por los lados " + lado1 +", "+ lado2 +" y base "+ lado3 +" es de " + lado1+lado2+lado3 + " centimetros")
+    return lado1+lado2+lado3
 }
 const getAreaDeUnTriangulo = (base, altura) => {
-    console.log("El area de un triangulo de base "+ base + " y altura " + altura + " es de " + (base * altura)/2 + " centimetros cuadrados ")
+    return (base * altura)/2
 }
 //Circulos
 const getPerimetroDeUnCirculo = (diametro) => {
-    console.log("El perimetro de un circulo de diametro " + diametro + " es de " + diametro*Math.PI + " centimetros" )
+    return diametro*Math.PI
 }
 const getAreaDeUnCirculo = (diametro)=>{
-    console.log("El area de un circulo de diametro " + diametro + " es de " + Math.PI*(diametro/2)*(diametro/2) + " centimetros cuadrados")
+    return Math.PI*(diametro/2)*(diametro/2)
 }
+
 console.group("Cuadrados")
 getPrimetroCuadrado(5)
 getAreaCuadrado(5)
@@ -32,3 +33,15 @@ getPerimetroDeUnCirculo(8)
 getAreaDeUnCirculo(8)
 console.groupEnd()
 
+const calcularPerimetroCuadrado = ()=>{
+    let valor = document.getElementById("inputCuadrado").value
+    let perimetro = getPrimetroCuadrado(valor)
+    alert(perimetro)
+
+
+}
+const calcularAreaCuadrado = ()=>{
+    let valor = document.getElementById("inputCuadrado").value
+    let area = getAreaCuadrado(valor)
+    alert(area)
+}
